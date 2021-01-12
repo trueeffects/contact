@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="email.css">
+    <title>True Effects</title>
+    <link rel ="shortcut icon" type ="image/png" href = "img/favicon.png.png">
+    <script src= "store.js" async></script>
+  </head>
+<body>
+
+<!-- Header -->
+<section id="header">
+  <div class="header container">
+    <div class="nav-bar">
+      <div class="brand">
+        <a href="index.html"><h1><span>T</span>rue <span>E</span>ffects</h1></a>
+      </div>
+      <div class="nav-list">
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Header -->
+
+<section id= "emailback">
+    <div class="container">
+      <form action="POST" data-netlify= "true" id="my-form">
+  
+        <div class="form-group">
+          <label for="firstName"> First Name</label>
+          <input type="text" id="firstName" name="firstName">
+        </div>
+  
+        <div class="form-group">
+          <label for="latsName">Last Name</label>
+          <input type="text" id="lastName" name="lastName">
+        </div>
+  
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email">
+        </div>
+
+        <div class="form-group">
+          <label for="cart">Cart</label>  
+        </div>
+  
+        <div class="form-group">
+          <label for="massage">Message</label>
+          <textarea name="massage" id="massage" cols="30" rows="10"></textarea>
+        </div>
+        <div class="form-group">
+          <div data-netlify-recaptcha="true"
+        </div>
+  
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <div id="status"></div>
+  </section>
+  </body>
